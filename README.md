@@ -1,8 +1,5 @@
 # StockFlow API Setup Instructions
 
-## Prerequisites
-- Node.js (v14+)
-- PostgreSQL (v12+)
 
 ## Setup Steps
 
@@ -87,16 +84,16 @@ curl http://localhost:3000/api/companies/2/alerts/low-stock
 
 ## Business Rules Implemented
 
-✅ **Low stock threshold varies by product type** - Each product/inventory can have custom thresholds
-✅ **Only alert for products with recent sales activity** - Only products sold in last 30 days are considered
-✅ **Must handle multiple warehouses per company** - Alerts across all company warehouses
-✅ **Include supplier information for reordering** - First supplier info included in response
+Low stock threshold varies by product type** - Each product/inventory can have custom thresholds
+Only alert for products with recent sales activity** - Only products sold in last 30 days are considered
+Must handle multiple warehouses per company** - Alerts across all company warehouses
+Include supplier information for reordering** - First supplier info included in response
 
 ## Sample Data Includes
 
-- **Company 1 (TechCorp):** 2 warehouses with 4 low-stock alerts
-- **Company 2 (RetailMart):** 1 warehouse with 2 low-stock alerts
-- **Products with no recent sales:** Won't trigger alerts (business rule)
+- Company 1 (TechCorp):** 2 warehouses with 4 low-stock alerts
+- Company 2 (RetailMart):** 1 warehouse with 2 low-stock alerts
+- Products with no recent sales:** Won't trigger alerts (business rule)
 
 ## Files Structure
 
